@@ -1,6 +1,7 @@
 queuectl — Background Job Queue System
 
 A simple CLI-based background job queue built in Node.js with SQLite persistence and multi-worker support.
+Watch the demo video here: [Click to view on OneDrive](https://1drv.ms/v/c/ac2e40665a93c2f5/EU5DSh_EeHRLqGlw3tMrDXEB6a2BwMkUvA1o9evusLgenQ?e=gdVfb8)
 
 **Setup Instructions**
 
