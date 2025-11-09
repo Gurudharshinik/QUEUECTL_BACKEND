@@ -28,16 +28,16 @@ input:node src/cli.js worker start --count 2
 output:2 workers started. Processing jobs
 
 input:node src/cli.js status
-output:Table with details (pending: 0, completed: 3)
+output:Table with details of all jobs
 
 input:node src/cli.js dlq list
-output:Table with full detail(job-005 failed after 3 retries)
+output:Table with full detail of all jobs in dlq list
 
 input:node src/cli.js list --state completed
-output:Shows details of completed IDS
+output:Shows details of completed Ids
 
 input:node src/cli.js worker stop
-output:Workers stops
+output:Workers stopped
 
 
 **Architecture**
@@ -83,7 +83,7 @@ Expected Result: Worker 1 completed the job
 Failed Job with Retries
 node src/cli.js enqueue --command "invalid_command"
 node src/cli.js worker start --count 1
-Expected Result: The job retries three times, then moves to the DLQ.
+Expected Result: The job moves to the DLQ.
 
 Retrying from DLQ
 node src/cli.js dlq list
