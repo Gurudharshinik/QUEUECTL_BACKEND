@@ -1,0 +1,21 @@
+{
+  "name": "queuectl",
+  "version": "1.0.0",
+  "description": "CLI-based background job queue with retries, exponential backoff, and DLQ",
+  "type": "module",
+  "main": "src/cli.js",
+  "bin": {
+    "queuectl": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "bash scripts/test.sh"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^8.0.0",
+    "commander": "^11.0.0",
+    "uuid": "^9.0.0"
+  }
+}
